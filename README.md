@@ -2,21 +2,21 @@ Check out the web app here: https://zacharesmer.github.io/tamagometer/
 
 # Hardware
 ## Flipper Zero
-The simplest (but not the cheapest!) way to get started is with a Flipper Zero. Here are instructions for that:
+The simplest (but not the cheapest--for that see the DIY instructions below) way to get started is with a Flipper Zero. 
 
 1. Install the "Tamagometer" app from the Flipper App Catalog (on the Flipper Mobile App or qFlipper).
-2. Launch the Tamagometer app.
+2. Launch the Tamagometer app on the Flipper.
 3. Connect the Flipper Zero to your computer via a USB-C cable.
 4. Open [the web app](https://zacharesmer.github.io/tamagometer/) on your computer.
-5. Follow the "Demo" instructions on the [the web app](https://zacharesmer.github.io/tamagometer/) to connect to your Flipper device from your browser and use Tamagometer!
+5. Follow the "Demo" instructions on [the web app](https://zacharesmer.github.io/tamagometer/) to connect to your Flipper device!
 
-Note: the screen on the Flipper Zero itself will not change upon being connected to the computer/web app, but if the Tamagometer web app on the computer shows it as connected, you should be good!
+Note: the screen on the Flipper Zero itself will not change upon being connected to the computer/web app, but if the app is open, it is waiting for commands in the background.
 
-If your the Tamagometer web app is not registering the Flipper Zero that is connected, make sure you are using a USB-C cable that supports data transfer (not just charging). As a basic check that your Flipper and USB-C cable are working connectly, make sure you are able to connect to it from https://lab.flipper.net/.
+If the Tamagometer web app is not registering the Flipper Zero that is connected, make sure your USB-C cable supports data transfer (some only support charging). As a basic connection test, if you can use your flipper with https://lab.flipper.net/ or qFlipper, then the USB cable is working correctly. (Note: the flipper can only be connected to one program at a time, so close lab.flipper.net and qflipper before using the tamagometer).
 
-The Flipper app source code, and instructions for bulding, is [here](https://github.com/zacharesmer/tamagometer-companion-flipper). The source code is also in the `flipper` folder of this repo as a submodule, so if you want to clone it all at once use `git clone --recursive https://github.com/zacharesmer/tamagometer.git`
+The [Flipper app source code](https://github.com/zacharesmer/tamagometer-companion-flipper) is also available if you'd like to modify it or build it yourself. It is also in the `flipper` folder of this repo as a submodule, so if you want to clone it all at once use `git clone --recursive https://github.com/zacharesmer/tamagometer.git`
 
-## Bring Your Own Board
+## DIY/Bring Your Own Board
 If you don't have a Flipper, you can make your own transmitter/receiver from a Raspberry Pi Pico. The firmware is written in MicroPython, so you'll need to prepare the Pico to run micropython programs. It might work on other boards that can run micropython, but I haven't tested any. 
 
 1. Load the MicroPython firmware onto your pico so that it will be able to run this program. Instructions and a link to the file are on the raspberry pi website here: https://www.raspberrypi.com/documentation/microcontrollers/micropython.html
@@ -81,12 +81,7 @@ For any known parts of the transmission, select from a list of possible values. 
 This allows you to snoop/listen in on a conversation between two tamagotchis. You can add the recorded messages to a conversation and save it for later.
 
 ## View Saved
-Recorded messages are saved locally on your computer using IndexedDB. If you clear your cookies and cache or site storage you will lose your saved messages! Please back them up by  using the export button to save them as a file so that you can add them back if this happens. Importing a file will add onto any existing saved messages; it won't overwrite them.
-
-# Goals/Roadmap
-- Understand the infrared messages that the tamagotchis send to the point where you can create one from scratch that does whatever you want it to do.
-- Make a flipper app so the tamagotchis can directly interact with the flipper
-- Internationalization: Tamagotchis are Japanese so I'm guessing it might be useful if I could translate this page into Japanese (and once the architecture is there, there's not a lot of text so it should not be too hard to do other languages too)
+Recorded messages are saved locally on your computer using IndexedDB. **If you clear your cookies and cache or site storage you will lose your saved messages!** Please back them up by  using the export button to save them as a file so that you can add them back if this happens. Importing a file will add onto any existing saved messages; it won't overwrite them.
 
 # Extra info
 
