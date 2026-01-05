@@ -78,6 +78,12 @@ Recorded messages are saved locally on your computer using IndexedDB. If you cle
 - Make a flipper app so the tamagotchis can directly interact with the flipper
 - Internationalization: Tamagotchis are Japanese so I'm guessing it might be useful if I could translate this page into Japanese (and once the architecture is there, there's not a lot of text so it should not be too hard to do other languages too)
 
+# Extra info
+
+I wrote a bit about the process in a blog post: https://resmer.co.za/ch/posts/tamagometer/
+
+And there are [some slides from a talk at DCFurs 2025](extra/DCFurs-Slides.pdf)
+
 # Prior Art and References
 - [This Tamagotchi reverse engineering project by Natalie Silvanovich](https://github.com/natashenka/Tamagotchi-Hack/tree/master) helped a ton 
 - The corresponding CCC talks: 

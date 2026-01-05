@@ -449,6 +449,9 @@ First 2 bits of 18th byte: First note in trumpet game
 
 # Byte 19: Game related
 3rd message, balloon and bldg block games: which item was selected. 0 left, 1 middle, 2 right
+
 Ball, rc car, rope: how much the meter is filled?
+
 Gotchi points: 3rd message, if 19th byte is even = the one sending 1st and 3rd messages wins
+
 Trumpet game: 00 = left button, 01 = middle button, 10 = right button. 2nd, 3rd, 4th, 5th note left to right.

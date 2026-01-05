@@ -12,3 +12,7 @@ flipper/env
 jupyter
 
 node_modules
+
+*.odt
+*.odp
+extra/title_tamafont*
