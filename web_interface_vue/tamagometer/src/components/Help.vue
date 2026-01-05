@@ -55,6 +55,8 @@ function retry() {
             <h3>Flipper Zero Setup</h3>
             <p>Install the <a href="https://github.com/zacharesmer/tamagometer-companion-flipper/tree/main"
                     target="_blank">Tamagometer Companion app</a>, and make sure it is open on your Flipper.</p>
+            <p>Note that the Flipper's screen will not change once it is connected to the tamagometer, but as long as the app is
+                open, it is waiting for commands in the background.</p>
             <h3>DIY device Setup (Raspberry Pi Pico or other)</h3>
             <p><a href="https://github.com/zacharesmer/tamagometer?tab=readme-ov-file#hardware" target="_blank">Follow
                     the instructions here</a> to connect the infrared receiver and transmitter, and load the
@@ -62,7 +64,7 @@ function retry() {
             <h2>Demo: Test it out!</h2>
             <ol>
                 <li>Connect the Flipper Zero or DIY device to your computer. Ensure you are using a USB cable that is
-                    set up for data transfer (not just charging).</li>
+                    set up for data transfer (not just charging). </li>
                 <li>If you see the "Connect" button above and/or below, press it. The button only appears if there's not
                     a device
                     already connected.</li>
