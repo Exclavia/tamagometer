@@ -2,9 +2,19 @@ Check out the web app here: https://zacharesmer.github.io/tamagometer/
 
 # Hardware
 ## Flipper Zero
-If you have a Flipper Zero, you can use that, just install the app and open it. 
+The simplest (but not the cheapest!) way to get started is with a Flipper Zero. Here are instructions for that:
 
-Get it from the Flipper App Catalog (search "Tamagometer"), download a pre-built version from Github, or build it yourself. [Here's the repository](https://github.com/zacharesmer/tamagometer-companion-flipper). The source code is also in the `flipper` folder of this repo as a submodule, so if you want to clone it all at once use `git clone --recursive https://github.com/zacharesmer/tamagometer.git`
+1. Install the "Tamagometer" app from the Flipper App Catalog (on the Flipper Mobile App or qFlipper).
+2. Launch the Tamagometer app.
+3. Connect the Flipper Zero to your computer via a USB-C cable.
+4. Open [the web app](https://zacharesmer.github.io/tamagometer/) on your computer.
+5. Follow the "Demo" instructions on the [the web app](https://zacharesmer.github.io/tamagometer/) to connect to your Flipper device from your browser and use Tamagometer!
+
+Note: the screen on the Flipper Zero itself will not change upon being connected to the computer/web app, but if the Tamagometer web app on the computer shows it as connected, you should be good!
+
+If your the Tamagometer web app is not registering the Flipper Zero that is connected, make sure you are using a USB-C cable that supports data transfer (not just charging). As a basic check that your Flipper and USB-C cable are working connectly, make sure you are able to connect to it from https://lab.flipper.net/.
+
+The Flipper app source code, and instructions for bulding, is [here](https://github.com/zacharesmer/tamagometer-companion-flipper). The source code is also in the `flipper` folder of this repo as a submodule, so if you want to clone it all at once use `git clone --recursive https://github.com/zacharesmer/tamagometer.git`
 
 ## Bring Your Own Board
 If you don't have a Flipper, you can make your own transmitter/receiver from a Raspberry Pi Pico. The firmware is written in MicroPython, so you'll need to prepare the Pico to run micropython programs. It might work on other boards that can run micropython, but I haven't tested any. 
