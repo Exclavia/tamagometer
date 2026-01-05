@@ -2,7 +2,7 @@ Check out the web app here: https://zacharesmer.github.io/tamagometer/
 
 # Hardware
 ## Flipper Zero
-The simplest (but not the cheapest--for that see the DIY instructions below) way to get started is with a Flipper Zero. 
+The simplest way to get started is with a Flipper Zero. (Not the cheapest,though--for that see the DIY instructions)
 
 1. Install the "Tamagometer" app from the Flipper App Catalog (on the Flipper Mobile App or qFlipper).
 2. Launch the Tamagometer app on the Flipper.
