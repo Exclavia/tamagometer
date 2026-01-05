@@ -80,7 +80,7 @@ Recorded messages are saved locally on your computer using IndexedDB. If you cle
 
 # Extra info
 
-I wrote a bit about the process in a blog post: https://resmer.co.za/ch/posts/tamagometer/
+I wrote a bit about the process of making this in a blog post: https://resmer.co.za/ch/posts/tamagometer/
 
 And there are [some slides from a talk at DCFurs 2025](extra/DCFurs-Slides.pdf)
 
