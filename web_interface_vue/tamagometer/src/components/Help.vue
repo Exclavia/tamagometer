@@ -57,8 +57,9 @@ function retry() {
                     target="_blank">Tamagometer Companion app</a>, and make sure it is open on your Flipper.</p>
             <p>Note: the Flipper's screen does not change based on whether it is connected to the tamagometer. As
                 long as the app is open, it is waiting for commands in the background.</p>
+            <p>See <a href="https://github.com/zacharesmer/tamagometer?tab=readme-ov-file#flipper-zero" target="_blank">here</a> for more details.</p>
             <h3>DIY device Setup (Raspberry Pi Pico or other)</h3>
-            <p><a href="https://github.com/zacharesmer/tamagometer?tab=readme-ov-file#hardware" target="_blank">Follow
+            <p><a href="https://github.com/zacharesmer/tamagometer?tab=readme-ov-file#diybring-your-own-board" target="_blank">Follow
                     the instructions here</a> to connect the infrared receiver and transmitter, and load the
                 firmware onto the board.</p>
             <h2>Demo: Test it out!</h2>
