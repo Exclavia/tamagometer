@@ -1,9 +1,73 @@
 # Tamagotchi IR data format
 
+## Visits
+
+The tamagotchi that initiates the visit goes over to the tamagotchi that was waiting for the visit.
+
+## Gifts
+
+The tamagotchi that initiates the gift receives a gift from the other tamagotchi.
+
+## Games
+
+
+
+## Marriage
+
+(Thanks [Nintendotaku](https://bsky.app/profile/nintendotaku.bsky.social) for the research on this!)
+
+Tip:
+When testing marriage data on devices, you can press the reset button just before the animation finishes to cancel it, and there will be no baby.
+
+Byte 12 in 3rd message (1st byte after "Visit Activity")
+
+Male baby:
+00000001
+
+Female baby:
+00000010
+
+Child stage tier determines what characters can be obtained in the next gen. (Ex. serious type character can't be raised if parents are naughty - stubborn type.) 
+Byte 14 in 3rd message (4th byte after "Name")
+
+Tier 1:
+00000000 (Not confirmed)
+
+Tier 2:
+00000001 (Not confirmed)
+
+Tier 3:
+00000010 (Hypothesized)
+
+Tier 4:
+00000011 (Not confirmed)
+
+Character care rank is baked into connection data, and cannot be changed with character selection.
+Byte 13, 1st and 2nd messages (3rd byte after "Name")
+Serious:
+00100001 (Not Confirmed)
+
+Normal - Stubborn:
+00100000 (Not Confirmed)
+
+Side note: Characters can get married regardless of gender when marriage data is used.
+
+Hypothesis:
+Byte 15 in 1st and 2nd messages (5th byte after "Name")
+
+Can't marry (Baby, Child, Teen, or Adult under 6, Adult/Senior with baby):
+00000000 (Not Confirmed)
+
+Can marry (Adult 6+, Senior):
+00000100 (Not Confirmed)
+
+
+## Overview
+
 | Byte  | Bits | Description|
 |--|--|--|
 |1| |Hard-coded, same for all I've tested |
-|2| |Might define the type of interaction |
+|2| |3rd and 4th: conversation type |
 |3| |ID 1|
 |4| |ID 2|
 |5| |Character appearance|
@@ -12,11 +76,11 @@
 |8| |Name letter 3|
 |9| |Name letter 4|
 |10| |Name letter 5|
-|11| | |
+|11| | 1st and 2nd: character's gender, 3rd: visit activity |
 |12| | |
-|13| | |
-|14| | |
-|15| |Gift Item|
+|13| |Character care level (likely but unconfirmed) |
+|14| |Character tier (likely but unconfirmed) |
+|15| |1st and 2nd: Can/can't marry, 3rd: Gift Item|
 |16| |Pre-gift activity|
 |17| | |
 |18| | |
@@ -26,12 +90,12 @@
 # Byte 2: Interaction type
 The 2nd byte changes based on the interaction type
 
-| | Visit| Present  | Present + Visit | Game|
-| -- | --: | --: | --: | --: |
-| Message 1 | 00000000 | 00000000 | 00000000| 00000000 |
-| Message 2 | 00000001 | 00000001 | 00000001| 00000001 |
-| Message 3 | 00001000 | 00000100 | 00000110| 00000010 |
-| Message 4 | 00001001 | 00000101 | 00000111| 00000011 |
+| | Visit| Present  | Present + Visit | Game|Marriage|
+| -- | --: | --: | --: | --: |--:|
+| Message 1 | 00000000 | 00000000 | 00000000| 00000000 |00000000|
+| Message 2 | 00000001 | 00000001 | 00000001| 00000001 |00000001|
+| Message 3 | 00001000 | 00000100 | 00000110| 00000010 |00001010|
+| Message 4 | 00001001 | 00000101 | 00000111| 00000011 |00001011|
 
 
 # Byte 5: Character
