@@ -49,6 +49,11 @@ function retry() {
 <template>
     <div class="body-text-container">
         <div class="setup-container">
+            <h2>Created by <a href="https://github.com/zacharesmer">zacharesmer</a><h2>
+              <p>Forked page for personal/archiving purposes in case creator decides to delete.</p>
+              <p>All links listed on this page, however, still go to their original links as of currently (Jan. 2026)</p>
+
+          
             <h2>Hardware Setup</h2>
             <p>You can use the Tamagometer with a Flipper Zero or a Raspberry Pi Pico (or probably other boards
                 that can run Micropython, but they have not been tested).</p>
