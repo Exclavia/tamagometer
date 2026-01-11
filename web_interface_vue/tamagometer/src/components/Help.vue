@@ -62,7 +62,7 @@ function retry() {
             <p><a href="https://github.com/zacharesmer/tamagometer?tab=readme-ov-file#diybring-your-own-board" target="_blank">Follow
                     the instructions here</a> to connect the infrared receiver and transmitter, and load the
                 firmware onto the board.</p>
-            <h3>Created by <a href="https://github.com/zacharesmer" target="_blank">zacharesmer</a><3>
+            <h3>Created by <a href="https://github.com/zacharesmer" target="_blank">zacharesmer</a></h3>
             <p>Forked page for personal/archiving purposes in case creator decides to delete. 
                     All links listed on this page, however, still go to their original links as of currently (Jan. 2026)</p>
             <h2>Demo: Test it out!</h2>
