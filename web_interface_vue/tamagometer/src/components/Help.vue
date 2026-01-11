@@ -49,11 +49,6 @@ function retry() {
 <template>
     <div class="body-text-container">
         <div class="setup-container">
-            <h2>Created by <a href="https://github.com/zacharesmer">zacharesmer</a><h2>
-              <p>Forked page for personal/archiving purposes in case creator decides to delete.</p>
-              <p>All links listed on this page, however, still go to their original links as of currently (Jan. 2026)</p>
-
-          
             <h2>Hardware Setup</h2>
             <p>You can use the Tamagometer with a Flipper Zero or a Raspberry Pi Pico (or probably other boards
                 that can run Micropython, but they have not been tested).</p>
@@ -67,6 +62,9 @@ function retry() {
             <p><a href="https://github.com/zacharesmer/tamagometer?tab=readme-ov-file#diybring-your-own-board" target="_blank">Follow
                     the instructions here</a> to connect the infrared receiver and transmitter, and load the
                 firmware onto the board.</p>
+            <h3>Created by <a href="https://github.com/zacharesmer" target="_blank">zacharesmer</a><3>
+            <p>Forked page for personal/archiving purposes in case creator decides to delete. 
+                    All links listed on this page, however, still go to their original links as of currently (Jan. 2026)</p>
             <h2>Demo: Test it out!</h2>
             <ol>
                 <li>Connect the Flipper Zero or DIY device to your computer. Ensure you are using a USB cable that is
