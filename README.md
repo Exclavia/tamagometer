@@ -1,4 +1,4 @@
-Check out the web app here: https://zacharesmer.github.io/tamagometer/
+
 
 # Hardware
 ## Flipper Zero
