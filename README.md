@@ -1,4 +1,8 @@
+# Original/Main [Repository](https://github.com/zacharesmer/tamagometer)
+### Created by [zacharesmer](https://github.com/zacharesmer)
+This fork is for personal/archival purposes. All credit goes to Zacharesmer.
 
+---
 
 # Hardware
 ## Flipper Zero
